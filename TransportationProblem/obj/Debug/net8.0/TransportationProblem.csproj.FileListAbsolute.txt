@@ -1,0 +1,15 @@
+/workspaces/TransportTaskCSharpCooking/TransportationProblem/bin/Debug/net8.0/TransportationProblem
+/workspaces/TransportTaskCSharpCooking/TransportationProblem/bin/Debug/net8.0/TransportationProblem.deps.json
+/workspaces/TransportTaskCSharpCooking/TransportationProblem/bin/Debug/net8.0/TransportationProblem.runtimeconfig.json
+/workspaces/TransportTaskCSharpCooking/TransportationProblem/bin/Debug/net8.0/TransportationProblem.dll
+/workspaces/TransportTaskCSharpCooking/TransportationProblem/bin/Debug/net8.0/TransportationProblem.pdb
+/workspaces/TransportTaskCSharpCooking/TransportationProblem/obj/Debug/net8.0/TransportationProblem.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/TransportTaskCSharpCooking/TransportationProblem/obj/Debug/net8.0/TransportationProblem.AssemblyInfoInputs.cache
+/workspaces/TransportTaskCSharpCooking/TransportationProblem/obj/Debug/net8.0/TransportationProblem.AssemblyInfo.cs
+/workspaces/TransportTaskCSharpCooking/TransportationProblem/obj/Debug/net8.0/TransportationProblem.csproj.CoreCompileInputs.cache
+/workspaces/TransportTaskCSharpCooking/TransportationProblem/obj/Debug/net8.0/TransportationProblem.sourcelink.json
+/workspaces/TransportTaskCSharpCooking/TransportationProblem/obj/Debug/net8.0/TransportationProblem.dll
+/workspaces/TransportTaskCSharpCooking/TransportationProblem/obj/Debug/net8.0/refint/TransportationProblem.dll
+/workspaces/TransportTaskCSharpCooking/TransportationProblem/obj/Debug/net8.0/TransportationProblem.pdb
+/workspaces/TransportTaskCSharpCooking/TransportationProblem/obj/Debug/net8.0/TransportationProblem.genruntimeconfig.cache
+/workspaces/TransportTaskCSharpCooking/TransportationProblem/obj/Debug/net8.0/ref/TransportationProblem.dll
