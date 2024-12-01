@@ -11,37 +11,39 @@ class Program
         var (supply, demand, costs) = ReadData("in.txt");
         int n = supply.Length; // Количество поставщиков
         int m = demand.Length; // Количество потребителей
-    
+
         // Начальное распределение
         var allocation = new int[n, m];
         NorthWestCornerMethod(supply, demand, costs, allocation);
-    
+
         OptimizeTransportation(supply, demand, costs, allocation);
-    
+
         // Запись результатов в файл, передаем costs
         WriteResults("out.txt", allocation, costs);
     }
 
     static (int[] supply, int[] demand, int[,] costs) ReadData(string filePath)
     {
-        var lines = File.ReadAllLines(filePath);
-        var firstLine = lines[0].Split(' ').Select(int.Parse).ToArray();
-        int n = firstLine[0], m = firstLine[1];
-        
-        var supply = lines[1].Split(' ').Select(int.Parse).ToArray();
-        var demand = lines[2].Split(' ').Select(int.Parse).ToArray();
-        var costs = new int[n, m];
-
-        for (int i = 0; i < n; i++)
+        using (var reader = new StreamReader(filePath))
         {
-            var costLine = lines[i + 3].Split(' ').Select(int.Parse).ToArray();
-            for (int j = 0; j < m; j++)
+            var firstLine = reader.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            int n = firstLine[0], m = firstLine[1];
+    
+            var supply = reader.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            var demand = reader.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            var costs = new int[n, m];
+    
+            for (int i = 0; i < n; i++)
             {
-                costs[i, j] = costLine[j];
+                var costLine = reader.ReadLine().Split(' ').Select(int.Parse).ToArray();
+                for (int j = 0; j < m; j++)
+                {
+                    costs[i, j] = costLine[j];
+                }
             }
+    
+            return (supply, demand, costs);
         }
-
-        return (supply, demand, costs);
     }
 
     static void NorthWestCornerMethod(int[] supply, int[] demand, int[,] costs, int[,] allocation)
