@@ -1,4 +1,17 @@
-﻿using System;
+﻿/////////////////////////////////
+//      README.md first!       //
+//                             //
+//        CSharpCooking        //
+//           hackaton          //
+//     TransportationProblem   //
+//           Solution          //
+//                             //
+//        developed by:        //
+//                             //
+//             Горбачев Матвей //
+//               Шакиров Булат //
+/////////////////////////////////
+using System;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
