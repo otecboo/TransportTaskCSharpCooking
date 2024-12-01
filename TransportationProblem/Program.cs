@@ -11,16 +11,15 @@ class Program
         var (supply, demand, costs) = ReadData("in.txt");
         int n = supply.Length; // Количество поставщиков
         int m = demand.Length; // Количество потребителей
-
-        // Начальное 
+    
+        // Начальное распределение
         var allocation = new int[n, m];
         NorthWestCornerMethod(supply, demand, costs, allocation);
-
-        
+    
         OptimizeTransportation(supply, demand, costs, allocation);
-
-        // Запись результатов в файлe
-        WriteResults("out.txt", allocation);
+    
+        // Запись результатов в файл, передаем costs
+        WriteResults("out.txt", allocation, costs);
     }
 
     static (int[] supply, int[] demand, int[,] costs) ReadData(string filePath)
@@ -70,7 +69,7 @@ class Program
         // 
     }
         //TODO: вложенные циклы нехорошо
-    static void WriteResults(string filePath, int[,] allocation)
+    static void WriteResults(string filePath, int[,] allocation, int[,] costs)
     {
         using (var writer = new StreamWriter(filePath))
         {
@@ -79,7 +78,7 @@ class Program
             {
                 for (int j = 0; j < allocation.GetLength(1); j++)
                 {
-                    totalCost += allocation[i, j] * costs[i, j]; // costs должен быть доступен
+                    totalCost += allocation[i, j] * costs[i, j]; // Теперь costs доступен
                 }
             }
             writer.WriteLine(totalCost);
