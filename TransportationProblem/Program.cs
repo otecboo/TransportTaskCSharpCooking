@@ -19,7 +19,7 @@ class Program
         
         OptimizeTransportation(supply, demand, costs, allocation);
 
-        // Запись результатов в файл
+        // Запись результатов в файлe
         WriteResults("out.txt", allocation);
     }
 
