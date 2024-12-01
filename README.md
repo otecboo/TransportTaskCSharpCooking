@@ -1,4 +1,4 @@
-# 🔸TransportTaskCSharpCooking🔸
+# 🔹TransportTaskCSharpCooking🔹
 Solution created for CSharpCooking-hackathon by:
 
 4305 Шакиров Булат Ниязович && Горбачев Матвей Андреевич
